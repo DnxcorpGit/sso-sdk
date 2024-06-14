@@ -1,3 +1,16 @@
 {
-
+  "name": "dnx/sso-sdk",
+  "description": "SSO SDK for PHP",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Dnx\\Sso\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "ext-curl": "*",
+    "ext-json": "*"
+  }
 }
