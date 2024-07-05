@@ -1,5 +1,5 @@
 {
-  "name": "dnx/sso-sdk",
+  "name": "dnxcorp/sso-sdk",
   "description": "SSO SDK for PHP",
   "type": "library",
   "license": "MIT",
