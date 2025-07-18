@@ -10,7 +10,7 @@ The SDK is compatible with PHP 7.4 and above.
 To install the SDK, you can use composer. Run the following command:
 
 ```bash
-composer require dnxcorp/sso-sdk
+composer require dnxcorp/sso-sdk:v7.4.0
 ```
 
 ## Usage
