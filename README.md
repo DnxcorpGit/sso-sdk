@@ -13,6 +13,12 @@ To install the SDK, you can use composer. Run the following command:
 composer require dnxcorp/sso-sdk
 ```
 
+You can specify a tag for a specific version of php.
+We currently offer 7.4 and 8.1. with tags
+
+ * v7.4.0
+ * v8.1.0
+
 ## Usage
 
 ```php
