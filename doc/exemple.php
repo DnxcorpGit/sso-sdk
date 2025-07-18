@@ -4,6 +4,10 @@
  */
 namespace Dnx\Sso;
 
+// If using Composer autoloader
+// require_once __DIR__ . '/../vendor/autoload.php';
+
+// Manual includes for this example
 require_once __DIR__ . '/../src/Client.php';
 require_once __DIR__ . '/../src/ServiceEnum.php';
 require_once __DIR__ . '/../src/Response.php';
@@ -42,7 +46,7 @@ try {
         $data = array_merge($data, [
             'userIp' => $_SERVER['REMOTE_ADDR'],
             'model' => $_POST['model'] ?? null,
-            'service' => $_POST['service'] ? ServiceEnum::from($_POST['service']) : null,
+            'service' => $_POST['service'] ?: null,
             'country' => strtoupper($_POST['country']) ?? null,
             'language' => $_POST['language'] ?? null,
             'tracker' => $_POST['tracker'] ?? null,
@@ -54,7 +58,7 @@ try {
 //        $httpPass = 'test';
 //        $header = ['Authorization: Basic ' . base64_encode($httpUser . ':' . $httpPass)];
 
-        $client = new Client($apiToken, headers: $header);
+        $client = new Client($apiToken, Client::API_URL, $header);
         // Call login or register
         if ($loginToken) {
             $response = $client->login(...$data);

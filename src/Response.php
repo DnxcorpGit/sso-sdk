@@ -1,27 +1,24 @@
 <?php
-
 /**
  * @licence proprietary
  */
-
 namespace Dnx\Sso;
 
-/**
- * Response
- *
- * @author Joseph LEMOINE <j.lemoine@ludi.cat>
- */
 class Response
 {
     protected ?string $redirectUrl = null;
     protected ?string $loginToken = null;
     protected ?string $reason = null;
     protected bool $canFetchUrl = false;
+    protected ?int $statusCode;
+    protected ?string $data;
 
     public function __construct(
-        protected ?int $statusCode,
-        protected ?string $data
+        ?int $statusCode,
+        ?string $data
     ) {
+        $this->statusCode = $statusCode;
+        $this->data = $data;
         if ($this->statusCode !== 200) {
             $this->reason = sprintf('HTTP status code is %s', $this->statusCode);
             return;

@@ -4,21 +4,24 @@
  */
 namespace Dnx\Sso;
 
-/**
- * Client
- *
- * @author Joseph LEMOINE <j.lemoine@ludi.cat>
- */
 class Client
 {
     const API_URL = 'https://api.back.dnx.lu';
     const API_ENDPOINT = '/sso/';
 
+    protected string $token;
+    protected string $baseUrl;
+    protected array $headers;
+
     public function __construct(
-        protected string $token,
-        protected string $baseUrl = self::API_URL,
-        protected array $headers = [],
-    ) { }
+        string $token,
+        string $baseUrl = self::API_URL,
+        array $headers = []
+    ) {
+        $this->token = $token;
+        $this->baseUrl = $baseUrl;
+        $this->headers = $headers;
+    }
 
     public function register(
         string $email,
@@ -26,7 +29,7 @@ class Client
         string $country,
         string $language,
         ?string $model = null,
-        ?ServiceEnum $service = null,
+        ?string $service = null,
         ?string $tracker = null,
     )
     {
@@ -66,7 +69,7 @@ class Client
         string $country,
         string $language,
         ?string $model = null,
-        ?ServiceEnum $service = null,
+        ?string $service = null,
         ?string $tracker = null,
     )
     {
