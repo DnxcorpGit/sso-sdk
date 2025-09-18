@@ -25,11 +25,18 @@ class Response
         }
 
         $decoded = json_decode($data, true);
+        $mapping = [
+            'redirectUrl' => 'redirectUrl',
+            'loginToken' => 'canFetchUrl',
+            'reason' => 'reason',
+        ];
+        foreach ($mapping as $key => $property) {
+            if (array_key_exists($key, $decoded)) {
+                $this->$property = $decoded[$key];
+            }
+        }
 
-        $this->redirectUrl = $decoded['redirectUrl'];
-        $this->loginToken = $decoded['loginToken'];
-        $this->canFetchUrl = empty($decoded['loginToken']);
-        $this->reason = $decoded['reason'];
+        $this->canFetchUrl = empty($this->loginToken);
     }
 
     public function isSuccess(): bool
