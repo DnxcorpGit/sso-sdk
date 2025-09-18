@@ -12,7 +12,7 @@ class ServiceEnum
     /**
      * Validate if a value is a valid service enum value
      */
-    public static function isValid(string $value): bool
+    public static function isValid(?string $value): bool
     {
         return in_array($value, [self::PROFILE, self::WEBCAMS_LIST], true);
     }
