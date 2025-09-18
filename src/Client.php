@@ -30,7 +30,7 @@ class Client
         string $language,
         ?string $model = null,
         ?string $service = null,
-        ?string $tracker = null,
+        ?string $tracker = null
     )
     {
         // Call the API with curl
@@ -70,7 +70,7 @@ class Client
         string $language,
         ?string $model = null,
         ?string $service = null,
-        ?string $tracker = null,
+        ?string $tracker = null
     )
     {
         // Call the API with curl
