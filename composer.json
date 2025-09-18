@@ -8,9 +8,21 @@
       "Dnx\\Sso\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Dnx\\Sso\\Tests\\": "tests"
+    }
+  },
   "require": {
     "php": ">=7.4",
     "ext-curl": "*",
     "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.6"
+  },
+  "scripts": {
+    "test": "phpunit",
+    "test-coverage": "phpunit --coverage-html coverage"
   }
 }

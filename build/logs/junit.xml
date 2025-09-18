@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="12" assertions="38" errors="0" warnings="0" failures="0" skipped="0" time="0.001337">
+    <testsuite name="default" tests="12" assertions="38" errors="0" warnings="0" failures="0" skipped="0" time="0.001337">
+      <testsuite name="Dnx\Sso\Tests\ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" tests="12" assertions="38" errors="0" warnings="0" failures="0" skipped="0" time="0.001337">
+        <testcase name="testGetRedirectUrlWhenCanFetchUrl" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="67" assertions="1" time="0.001014"/>
+        <testcase name="testCanFetchUrlLogic" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="165" assertions="2" time="0.000098"/>
+        <testcase name="testJsonDecodingWithInvalidJson" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="126" assertions="5" time="0.000011"/>
+        <testcase name="testGetRedirectUrlThrowsExceptionWhenCannotFetchUrl" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="79" assertions="2" time="0.000037"/>
+        <testcase name="testGetLoginTokenEnablesUrlFetching" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="94" assertions="1" time="0.000009"/>
+        <testcase name="testGetLoginTokenAndThenGetRedirectUrl" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="108" assertions="2" time="0.000007"/>
+        <testcase name="testMappingLogicInConstructor" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="151" assertions="2" time="0.000007"/>
+        <testcase name="testConstructorWithSuccessfulResponse" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="12" assertions="4" time="0.000021"/>
+        <testcase name="testConstructorWithErrorResponse" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="27" assertions="4" time="0.000016"/>
+        <testcase name="testConstructorWithNullValues" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="37" assertions="4" time="0.000098"/>
+        <testcase name="testIsSuccessWithVariousStatusCodes" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="47" assertions="8" time="0.000011"/>
+        <testcase name="testJsonDecodingWithPartialData" class="Dnx\Sso\Tests\ResponseTest" classname="Dnx.Sso.Tests.ResponseTest" file="/home/jlemoine/projects/dnx/back/sso-sdk/tests/ResponseTest.php" line="137" assertions="3" time="0.000008"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

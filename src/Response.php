@@ -25,9 +25,14 @@ class Response
         }
 
         $decoded = json_decode($data, true);
+        if (!$decoded) {
+            $this->reason = 'invalid json';
+            return;
+        }
+
         $mapping = [
             'redirectUrl' => 'redirectUrl',
-            'loginToken' => 'canFetchUrl',
+            'loginToken' => 'loginToken',
             'reason' => 'reason',
         ];
         foreach ($mapping as $key => $property) {
